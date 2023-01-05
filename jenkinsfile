@@ -1,0 +1,32 @@
+pipelkne{
+    agent any
+    envioronment{
+        child1='TAMAR'
+        child2='SARI'
+        child3='DASI'
+    }
+    stages{
+        stage('print girls'){
+            steps{
+              sh '''
+              whoami
+              echo ${LOGNAME}
+              echo 'my girls: ${child1} , ${child2} , ${child3}'
+              '''  
+            }
+        }
+        stage('print sons'){
+            envirinment{
+                child1='YOSI'
+                child2='NATI'
+            }
+            steps{
+              sh '''
+              USERNAME
+              echo 'my girls: ${child1} , ${child2} , ${child3}'
+              
+              '''  
+            }
+        }
+    }
+}
