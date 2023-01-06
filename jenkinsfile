@@ -24,8 +24,9 @@ pipelkne{
               sh '''
               USERNAME
               echo 'my girls: ${child1} , ${child2} , ${child3}'
-              
-              '''  
+              DATE
+              '''
+              BUILD_NUMBER
             }
         }
     }
