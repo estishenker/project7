@@ -25,6 +25,7 @@ pipelkne{
               USERNAME
               echo 'my girls: ${child1} , ${child2} , ${child3}'
               DATE
+              DATE
               '''
               BUILD_NUMBER
             }
